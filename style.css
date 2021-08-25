@@ -18,18 +18,15 @@ h1 {
 
 body {
   margin: 0;
-  /* background-image:  */
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  width: 100%;
+  background-image: url(/images/bg-background.gif);
+  color: black;
 }
 
 .displayFlex {
-  background-color: rgba(16, 116, 54, 0.342); /* what is this ??? */
+  background-color: white;
   display: flex;
   margin: 4rem auto;
-  max-width: 80%;
+  max-width: 60%;
   min-height: 80vh;
 }
 
@@ -64,6 +61,7 @@ a.link {
   text-decoration: none;
   position: relative;
   z-index: 10;
+  color: black;
 }
 
 a.secondary-link {
@@ -144,4 +142,17 @@ label {
 
 .transperantBg {
   background-image: url("");
+}
+
+.displayFlex:hover {
+  background-color: black;
+  color: white;
+}
+
+.displayFlex:hover a.link {
+  color: white;
+}
+
+.displayFlex:hover input {
+  color: white;
 }
