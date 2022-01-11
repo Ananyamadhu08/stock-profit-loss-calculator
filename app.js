@@ -9,7 +9,7 @@ const output = document.querySelector(".output");
 const contentDiv = document.querySelector(".displayFlex");
 const cols = document.querySelectorAll(".col");
 
-form.addEventListener("submit", function checkHandler(e) {
+const checkHandler = (e) => {
   e.preventDefault();
 
   let CP = inputs[0].value;
@@ -46,4 +46,6 @@ form.addEventListener("submit", function checkHandler(e) {
     output.innerHTML =
       "Please Enter Values Greater Than 0 (Only Numbers Are Allowed In Above Fields)";
   }
-});
+};
+
+form.addEventListener("submit", checkHandler);
